@@ -3,21 +3,21 @@
 // configures host and port 
 
 // Initialize a variable to hold the base URL
-let baseURL = 'http://localhost:3000'; // default value
+let baseURL = 'https://tuliptalent-4cd422fded75.herokuapp.com/'; // default value
 
 // Function to fetch configuration from the server
-async function fetchConfig() {
-  try {
-    const response = await fetch('/config');
-    const config = await response.json();
-    baseURL = `http://${config.host}:${config.port}`;
-    console.log(`Base URL set to: ${baseURL}`);
-  } catch (error) {
-    console.error("Error fetching configuration:", error);
-  }
-}
+// async function fetchConfig() {
+//   try {
+//     const response = await fetch('/config');
+//     const config = await response.json();
+//     baseURL = `http://${config.host}:${config.port}`;
+//     console.log(`Base URL set to: ${baseURL}`);
+//   } catch (error) {
+//     console.error("Error fetching configuration:", error);
+//   }
+// }
 
-fetchConfig();
+// fetchConfig();
 
 
   // detects safari browser
