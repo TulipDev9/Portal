@@ -893,6 +893,6 @@ app.set('trust proxy', true);
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
 
-const server = app.listen(PORT, () => {
-  console.log(`Server running at ${PORT}`);
+const server = app.listen(PORT, HOST, () => {
+  console.log(`Server running at http://${HOST}:${PORT}`);
 });
